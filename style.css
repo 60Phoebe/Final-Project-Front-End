@@ -1,0 +1,259 @@
+header {
+    background-color: #1F2937;
+    color: #bccae7;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #000000;
+    text-align: center;
+    padding: 40px;
+    font-size: larger;
+    background-image: url('img/trash.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.sambutan{
+    color: #FFFFFF;
+    font-family: 'Segoe UI';
+    margin: 0;
+    font-size: 58px;
+    padding-top: 60px;
+    line-height: 10%;
+}
+
+body{
+    background-color: #e7ecf3;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #252c3d;
+}
+
+#nav, .box, a{
+    font-size: large;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    width: 20%;
+    padding: 5px;
+    text-align: left;
+    color: #1F2937;
+}
+
+
+
+section{
+    margin-left: 15px;
+    margin-right: 95px;
+}
+
+.teks{
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    text-align: justify;
+}
+
+.awal{
+    color: #586a8c;
+    font-size: 65px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -2px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #36475a;
+    margin-bottom: -12px;
+}
+
+.op{
+    margin-top: 100px;
+    color: #586a8c;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -2px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #36475a;
+    margin-bottom: -12px;
+}
+
+.maaf{
+    font-size: 50px;
+    color: #252c3d;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+}
+
+footer{
+    margin-top: 100px;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#nav a{
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    color: #1F2937;
+    text-decoration: none;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.box{
+    width: 50%;
+    padding: 10px;
+    border: 2px solid #787b97;
+    background-color: #d0d9eb;
+    box-sizing: border-box;
+    border-collapse: separate;
+    border-spacing: 15px;
+    place-items:center;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+        font-size: medium;
+    }
+
+    .sambutan {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+
+    #nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav a {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 10px;
+        margin: 20px;
+    }
+
+    .box {
+        padding: 8px;
+    }
+
+    section {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .teks {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .awal {
+        font-size: 50px;
+    }
+
+    .op {
+        font-size: 28px;
+        margin-top: 50px;
+    }
+
+    .maaf {
+        font-size: 35px;
+        margin-left: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    footer {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px;
+        font-size: small;
+    }
+
+    .sambutan {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    #nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #nav a {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0;
+        font-size: medium;
+    }
+
+    .box-container {
+        grid-template-columns: 1fr; 
+        gap: 10px;
+        margin: 15px;
+    }
+
+    .box {
+        padding: 8px;
+    }
+
+    section {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .teks {
+        font-size: 13px;
+        letter-spacing: 0.5px;
+        text-align: left; 
+    }
+
+    .awal{
+        font-size: 40px;
+    }
+
+    .op{
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .maaf{
+        font-size: 28px;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    footer{
+        margin-top: 30px;
+    }
+}
